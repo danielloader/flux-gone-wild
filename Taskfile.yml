@@ -1,0 +1,11 @@
+# https://taskfile.dev
+
+version: '3'
+
+env:
+  KUBECONFIG: '.kubeconfig'
+
+tasks:
+  init:
+    cmds:
+      - kind create cluster --name flux-gone-wild
